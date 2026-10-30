@@ -1,0 +1,954 @@
+{
+  "source": "synthetic",
+  "synthetic": true,
+  "quick": false,
+  "pairs": {
+    "AUDUSD": {
+      "clean": {
+        "raw": 8370573,
+        "nonpositive": 68,
+        "crossed": 54,
+        "duplicates": 0,
+        "outliers": 56,
+        "outside_fx_week": 0,
+        "kept": 8370395,
+        "gaps_over_5min": 106
+      },
+      "start": "2024-10-01 00:00:00+00:00",
+      "end": "2026-09-30 23:59:00+00:00",
+      "minutes": 748897,
+      "median_spread_bps": 0.5380856464888627,
+      "mean_spread_bps": 0.5840587185676106
+    },
+    "AUDJPY": {
+      "clean": {
+        "raw": 2060517,
+        "nonpositive": 12,
+        "crossed": 16,
+        "duplicates": 0,
+        "outliers": 17,
+        "outside_fx_week": 0,
+        "kept": 2060472,
+        "gaps_over_5min": 27
+      },
+      "start": "2026-04-01 00:00:00+00:00",
+      "end": "2026-09-30 23:59:00+00:00",
+      "minutes": 187946,
+      "median_spread_bps": 1.0633397531830164,
+      "mean_spread_bps": 1.1527095498359599
+    },
+    "EURUSD": {
+      "clean": {
+        "raw": 2153052,
+        "nonpositive": 20,
+        "crossed": 25,
+        "duplicates": 0,
+        "outliers": 14,
+        "outside_fx_week": 0,
+        "kept": 2152993,
+        "gaps_over_5min": 26
+      },
+      "start": "2026-04-01 00:00:00+00:00",
+      "end": "2026-09-30 23:59:00+00:00",
+      "minutes": 188076,
+      "median_spread_bps": 0.3029458315145338,
+      "mean_spread_bps": 0.3279488719402223
+    }
+  },
+  "heatmap": {
+    "AUDUSD": {
+      "cheapest": [
+        {
+          "weekday": "Tue",
+          "hour": 0,
+          "mean_bps": 0.36321908697306154,
+          "lo": 0.3441783367281616,
+          "hi": 0.37934634161191355,
+          "days": 104
+        },
+        {
+          "weekday": "Thu",
+          "hour": 1,
+          "mean_bps": 0.3647636051631937,
+          "lo": 0.3491642681086868,
+          "hi": 0.37924988384972563,
+          "days": 105
+        },
+        {
+          "weekday": "Wed",
+          "hour": 1,
+          "mean_bps": 0.3654922150041135,
+          "lo": 0.35177485556248417,
+          "hi": 0.37880493316329256,
+          "days": 105
+        },
+        {
+          "weekday": "Tue",
+          "hour": 1,
+          "mean_bps": 0.3665927288111434,
+          "lo": 0.3517327540525976,
+          "hi": 0.38159670500709264,
+          "days": 104
+        },
+        {
+          "weekday": "Thu",
+          "hour": 0,
+          "mean_bps": 0.3704894080486933,
+          "lo": 0.35620646023039043,
+          "hi": 0.3844959996216006,
+          "days": 105
+        }
+      ],
+      "dearest": [
+        {
+          "weekday": "Mon",
+          "hour": 7,
+          "mean_bps": 1.0338396051674434,
+          "lo": 0.9547464754947222,
+          "hi": 1.105186465596714,
+          "days": 52
+        },
+        {
+          "weekday": "Fri",
+          "hour": 7,
+          "mean_bps": 0.9311390202024964,
+          "lo": 0.8821175756371339,
+          "hi": 0.9832432676833257,
+          "days": 104
+        },
+        {
+          "weekday": "Wed",
+          "hour": 7,
+          "mean_bps": 0.8825464673444233,
+          "lo": 0.8361931535705021,
+          "hi": 0.9388608343954689,
+          "days": 105
+        },
+        {
+          "weekday": "Tue",
+          "hour": 7,
+          "mean_bps": 0.8789529206468039,
+          "lo": 0.836746351551315,
+          "hi": 0.9146063444362154,
+          "days": 104
+        },
+        {
+          "weekday": "Thu",
+          "hour": 7,
+          "mean_bps": 0.862611226373401,
+          "lo": 0.8173564389107311,
+          "hi": 0.9038179621548449,
+          "days": 105
+        }
+      ]
+    },
+    "AUDJPY": {
+      "cheapest": [
+        {
+          "weekday": "Fri",
+          "hour": 23,
+          "mean_bps": 0.7159542616235277,
+          "lo": 0.6471060933184953,
+          "hi": 0.7825606919930989,
+          "days": 26
+        },
+        {
+          "weekday": "Sat",
+          "hour": 0,
+          "mean_bps": 0.7196433887459943,
+          "lo": 0.663176772994909,
+          "hi": 0.7827760217651749,
+          "days": 26
+        },
+        {
+          "weekday": "Sat",
+          "hour": 1,
+          "mean_bps": 0.7215132706071363,
+          "lo": 0.6649029304823992,
+          "hi": 0.7813067768897008,
+          "days": 26
+        },
+        {
+          "weekday": "Wed",
+          "hour": 1,
+          "mean_bps": 0.7254521431824117,
+          "lo": 0.6626313090112698,
+          "hi": 0.7995430015808856,
+          "days": 26
+        },
+        {
+          "weekday": "Thu",
+          "hour": 1,
+          "mean_bps": 0.7265797296748018,
+          "lo": 0.6768180186002702,
+          "hi": 0.7937678569106325,
+          "days": 27
+        }
+      ],
+      "dearest": [
+        {
+          "weekday": "Mon",
+          "hour": 7,
+          "mean_bps": 2.0182498348475253,
+          "lo": 1.8205571666820333,
+          "hi": 2.200208340753533,
+          "days": 26
+        },
+        {
+          "weekday": "Wed",
+          "hour": 7,
+          "mean_bps": 2.0052948317313684,
+          "lo": 1.8546803780743992,
+          "hi": 2.190091836860598,
+          "days": 26
+        },
+        {
+          "weekday": "Tue",
+          "hour": 7,
+          "mean_bps": 2.0052045732645443,
+          "lo": 1.8347930627874625,
+          "hi": 2.225949533710524,
+          "days": 26
+        },
+        {
+          "weekday": "Thu",
+          "hour": 7,
+          "mean_bps": 1.9768186636512728,
+          "lo": 1.7964150763543552,
+          "hi": 2.143913119523955,
+          "days": 27
+        },
+        {
+          "weekday": "Fri",
+          "hour": 7,
+          "mean_bps": 1.9013182732077103,
+          "lo": 1.68385055075343,
+          "hi": 2.104443673047557,
+          "days": 26
+        }
+      ]
+    }
+  },
+  "sessions": {
+    "AUDUSD": [
+      {
+        "session": "London/New York",
+        "mean": 0.37364263651072943,
+        "median": 0.36018611718386945,
+        "count": 127657
+      },
+      {
+        "session": "Tokyo/London",
+        "mean": 0.46344520075445805,
+        "median": 0.4479239448739787,
+        "count": 49409
+      },
+      {
+        "session": "London",
+        "mean": 0.4646358704281067,
+        "median": 0.4488914636666256,
+        "count": 104686
+      },
+      {
+        "session": "Sydney/Tokyo",
+        "mean": 0.5819391763583673,
+        "median": 0.5621794347382155,
+        "count": 203153
+      },
+      {
+        "session": "Sydney",
+        "mean": 0.6286682567341948,
+        "median": 0.5996538382278871,
+        "count": 63310
+      },
+      {
+        "session": "Tokyo",
+        "mean": 0.7364079149797162,
+        "median": 0.7081682815064674,
+        "count": 28628
+      },
+      {
+        "session": "New York",
+        "mean": 0.7439374926085989,
+        "median": 0.7186707204622665,
+        "count": 142857
+      },
+      {
+        "session": "Sydney/New York",
+        "mean": 0.7441895394671004,
+        "median": 0.7142171584664552,
+        "count": 7862
+      },
+      {
+        "session": "Off-hours",
+        "mean": 0.7470890789384981,
+        "median": 0.7207685339020286,
+        "count": 11711
+      },
+      {
+        "session": "NY rollover",
+        "mean": 1.8890554957840424,
+        "median": 1.818400917940245,
+        "count": 9624
+      }
+    ],
+    "AUDJPY": [
+      {
+        "session": "London/New York",
+        "mean": 0.736423374400809,
+        "median": 0.7062927238122914,
+        "count": 31434
+      },
+      {
+        "session": "London",
+        "mean": 0.9183286196456867,
+        "median": 0.8796395784325663,
+        "count": 23557
+      },
+      {
+        "session": "Tokyo/London",
+        "mean": 0.92533359469764,
+        "median": 0.8892694346250231,
+        "count": 15708
+      },
+      {
+        "session": "Sydney/Tokyo",
+        "mean": 1.1516928955803125,
+        "median": 1.1070187692791467,
+        "count": 54738
+      },
+      {
+        "session": "Tokyo",
+        "mean": 1.2760203816693307,
+        "median": 1.261829700668955,
+        "count": 176
+      },
+      {
+        "session": "Sydney",
+        "mean": 1.2970980259973717,
+        "median": 1.2273004162119983,
+        "count": 15732
+      },
+      {
+        "session": "New York",
+        "mean": 1.4627569174813537,
+        "median": 1.408349187254852,
+        "count": 38410
+      },
+      {
+        "session": "Off-hours",
+        "mean": 1.4648158182609736,
+        "median": 1.398680333144375,
+        "count": 5778
+      },
+      {
+        "session": "NY rollover",
+        "mean": 3.7339904083050106,
+        "median": 3.5692005227289587,
+        "count": 2413
+      }
+    ],
+    "EURUSD": [
+      {
+        "session": "London/New York",
+        "mean": 0.21016356085254664,
+        "median": 0.20316045834834917,
+        "count": 31433
+      },
+      {
+        "session": "Tokyo/London",
+        "mean": 0.26126474415565265,
+        "median": 0.2532038032429892,
+        "count": 15714
+      },
+      {
+        "session": "London",
+        "mean": 0.2617940013703477,
+        "median": 0.25405281301546423,
+        "count": 23560
+      },
+      {
+        "session": "Sydney/Tokyo",
+        "mean": 0.326962467138006,
+        "median": 0.3171135881726814,
+        "count": 54750
+      },
+      {
+        "session": "Sydney",
+        "mean": 0.3737364205823685,
+        "median": 0.3598537285640279,
+        "count": 15757
+      },
+      {
+        "session": "New York",
+        "mean": 0.4134597399588678,
+        "median": 0.4007626394356933,
+        "count": 38464
+      },
+      {
+        "session": "Off-hours",
+        "mean": 0.422146524162681,
+        "median": 0.4071238079860896,
+        "count": 5778
+      },
+      {
+        "session": "Tokyo",
+        "mean": 0.4675428089752108,
+        "median": 0.4561134550016634,
+        "count": 180
+      },
+      {
+        "session": "NY rollover",
+        "mean": 1.0586329319164862,
+        "median": 1.022282004352456,
+        "count": 2440
+      }
+    ]
+  },
+  "event_effects": [
+    {
+      "event": "ABS CPI",
+      "n_events": 16,
+      "excess_bps": 0.4141515872265447,
+      "lo": 0.3293118772827672,
+      "hi": 0.5011886104259781,
+      "ratio": 1.7264164108759728,
+      "p_value": 1.0284846382265815e-07,
+      "p_holm": 2.056969276453163e-07,
+      "pair": "AUDUSD",
+      "p_holm_all": 1.4398784935172142e-06
+    },
+    {
+      "event": "ABS Labour Force",
+      "n_events": 24,
+      "excess_bps": 0.32188603300009805,
+      "lo": 0.2501453499791465,
+      "hi": 0.39375055254000274,
+      "ratio": 1.5798849063108023,
+      "p_value": 5.413786624765406e-09,
+      "p_holm": 2.706893312382703e-08,
+      "pair": "AUDUSD",
+      "p_holm_all": 9.20343726210119e-08
+    },
+    {
+      "event": "FOMC statement",
+      "n_events": 16,
+      "excess_bps": 0.6118252895280141,
+      "lo": 0.47292872052308754,
+      "hi": 0.7434909201626955,
+      "ratio": 1.8539217030306365,
+      "p_value": 1.4378396492278825e-07,
+      "p_holm": 2.056969276453163e-07,
+      "pair": "AUDUSD",
+      "p_holm_all": 1.8691915439962473e-06
+    },
+    {
+      "event": "RBA cash rate decision",
+      "n_events": 16,
+      "excess_bps": 0.8345804736482566,
+      "lo": 0.662205333782637,
+      "hi": 0.9966890856500848,
+      "ratio": 2.430857473273627,
+      "p_value": 4.754510917986413e-08,
+      "p_holm": 1.426353275395924e-07,
+      "pair": "AUDUSD",
+      "p_holm_all": 7.13176637697962e-07
+    },
+    {
+      "event": "US CPI",
+      "n_events": 23,
+      "excess_bps": 0.2919424654985351,
+      "lo": 0.2275074427417546,
+      "hi": 0.3585584855060773,
+      "ratio": 1.7831236992378543,
+      "p_value": 1.268090163185141e-08,
+      "p_holm": 5.072360652740564e-08,
+      "pair": "AUDUSD",
+      "p_holm_all": 2.0289442610962255e-07
+    },
+    {
+      "event": "US Employment Situation (payrolls)",
+      "n_events": 23,
+      "excess_bps": 0.4059659989411468,
+      "lo": 0.33242941276506227,
+      "hi": 0.4797099659584069,
+      "ratio": 2.0641765632085587,
+      "p_value": 1.671420405730627e-10,
+      "p_holm": 1.0028522434383761e-09,
+      "pair": "AUDUSD",
+      "p_holm_all": 3.008556730315129e-09
+    },
+    {
+      "event": "ABS CPI",
+      "n_events": 6,
+      "excess_bps": 0.4111095725641521,
+      "lo": 0.14044704015589285,
+      "hi": 0.6495851531178825,
+      "ratio": 1.3655663371271416,
+      "p_value": 0.020237412705435723,
+      "p_holm": 0.04706180143894542,
+      "pair": "AUDJPY",
+      "p_holm_all": 0.10118706352717861
+    },
+    {
+      "event": "ABS Labour Force",
+      "n_events": 6,
+      "excess_bps": 0.6902008142610606,
+      "lo": 0.5424570694852378,
+      "hi": 0.8393926487106874,
+      "ratio": 1.5834598245317248,
+      "p_value": 0.0002682028995100591,
+      "p_holm": 0.0013410144975502954,
+      "pair": "AUDJPY",
+      "p_holm_all": 0.00295023189461065
+    },
+    {
+      "event": "FOMC statement",
+      "n_events": 4,
+      "excess_bps": 1.1441275986625332,
+      "lo": 0.5732796202733771,
+      "hi": 1.8377367562464775,
+      "ratio": 1.7875288646632184,
+      "p_value": 0.030757816393754467,
+      "p_holm": 0.04706180143894542,
+      "pair": "AUDJPY",
+      "p_holm_all": 0.12303126557501787
+    },
+    {
+      "event": "RBA cash rate decision",
+      "n_events": 4,
+      "excess_bps": 1.3108514352917668,
+      "lo": 0.7560303721395845,
+      "hi": 1.8656724984439492,
+      "ratio": 2.1741422488173385,
+      "p_value": 0.015687267146315142,
+      "p_holm": 0.04706180143894542,
+      "pair": "AUDJPY",
+      "p_holm_all": 0.09412360287789084
+    },
+    {
+      "event": "US CPI",
+      "n_events": 6,
+      "excess_bps": 0.6548012993642045,
+      "lo": 0.5257753501834881,
+      "hi": 0.788414487466039,
+      "ratio": 1.9349615659634676,
+      "p_value": 0.00018164100301524945,
+      "p_holm": 0.0010898460180914966,
+      "pair": "AUDJPY",
+      "p_holm_all": 0.0021796920361829932
+    },
+    {
+      "event": "US Employment Situation (payrolls)",
+      "n_events": 6,
+      "excess_bps": 0.8303352506668601,
+      "lo": 0.561478642084485,
+      "hi": 1.1250672188016322,
+      "ratio": 2.1771216342042488,
+      "p_value": 0.0019580966084541086,
+      "p_holm": 0.007832386433816434,
+      "pair": "AUDJPY",
+      "p_holm_all": 0.017622869476086978
+    },
+    {
+      "event": "ABS CPI",
+      "n_events": 6,
+      "excess_bps": -0.038641767214392754,
+      "lo": -0.09411843813465504,
+      "hi": 0.019019033248067734,
+      "ratio": 0.8856451489261067,
+      "p_value": 0.8626796461097191,
+      "p_holm": 1.0,
+      "pair": "EURUSD",
+      "p_holm_all": 1.0
+    },
+    {
+      "event": "ABS Labour Force",
+      "n_events": 6,
+      "excess_bps": -0.01303818534934384,
+      "lo": -0.06444181456767852,
+      "hi": 0.05530538036999805,
+      "ratio": 0.9731779841815791,
+      "p_value": 0.6396520365776359,
+      "p_holm": 1.0,
+      "pair": "EURUSD",
+      "p_holm_all": 1.0
+    },
+    {
+      "event": "FOMC statement",
+      "n_events": 4,
+      "excess_bps": 0.23074189950846258,
+      "lo": 0.13392865171485321,
+      "hi": 0.3275551473020719,
+      "ratio": 1.5259812105657473,
+      "p_value": 0.013339658396451938,
+      "p_holm": 0.05335863358580775,
+      "pair": "EURUSD",
+      "p_holm_all": 0.09337760877516357
+    },
+    {
+      "event": "RBA cash rate decision",
+      "n_events": 4,
+      "excess_bps": -0.0993180781593285,
+      "lo": -0.14806142692106655,
+      "hi": -0.04798711219445261,
+      "ratio": 0.7162659488168553,
+      "p_value": 0.9810352322704811,
+      "p_holm": 1.0,
+      "pair": "EURUSD",
+      "p_holm_all": 1.0
+    },
+    {
+      "event": "US CPI",
+      "n_events": 6,
+      "excess_bps": 0.14808094948323772,
+      "lo": 0.08930735554567214,
+      "hi": 0.2081503992629189,
+      "ratio": 1.6800942690492737,
+      "p_value": 0.0033254549608880066,
+      "p_holm": 0.016627274804440033,
+      "pair": "EURUSD",
+      "p_holm_all": 0.026603639687104053
+    },
+    {
+      "event": "US Employment Situation (payrolls)",
+      "n_events": 6,
+      "excess_bps": 0.2531792553426583,
+      "lo": 0.1730647212870822,
+      "hi": 0.33162413243599426,
+      "ratio": 2.284368054236472,
+      "p_value": 0.0014120099501339885,
+      "p_holm": 0.008472059700803931,
+      "pair": "EURUSD",
+      "p_holm_all": 0.014120099501339885
+    }
+  ],
+  "event_peaks_at_release": {
+    "AUDUSD": {
+      "RBA cash rate decision": {
+        "ratio": 2.97404778271413,
+        "lo": 2.552857823202237,
+        "hi": 3.35190641522815,
+        "minutes_above_1_5x": 6
+      },
+      "ABS CPI": {
+        "ratio": 1.9366154427936164,
+        "lo": 1.7410850956339659,
+        "hi": 2.1505566509094654,
+        "minutes_above_1_5x": 2
+      },
+      "ABS Labour Force": {
+        "ratio": 1.8166195986813698,
+        "lo": 1.6655068634745702,
+        "hi": 1.9721269339963268,
+        "minutes_above_1_5x": 1
+      },
+      "US Employment Situation (payrolls)": {
+        "ratio": 2.597087316629769,
+        "lo": 2.240372624046498,
+        "hi": 3.0166435848060047,
+        "minutes_above_1_5x": 5
+      },
+      "US CPI": {
+        "ratio": 2.0763768569537224,
+        "lo": 1.8539231264150975,
+        "hi": 2.328099442214728,
+        "minutes_above_1_5x": 4
+      },
+      "FOMC statement": {
+        "ratio": 2.1303089400078736,
+        "lo": 1.8751833329237317,
+        "hi": 2.3802724018461667,
+        "minutes_above_1_5x": 2
+      }
+    },
+    "AUDJPY": {
+      "RBA cash rate decision": {
+        "ratio": 2.3870207762221973,
+        "lo": 1.662601993535128,
+        "hi": 3.111439558909267,
+        "minutes_above_1_5x": 5
+      },
+      "ABS CPI": {
+        "ratio": 1.4529007908654556,
+        "lo": 1.214187810506375,
+        "hi": 1.650207260942686,
+        "minutes_above_1_5x": 0
+      },
+      "ABS Labour Force": {
+        "ratio": 1.8124292457893068,
+        "lo": 1.701461326185108,
+        "hi": 1.9116917192012683,
+        "minutes_above_1_5x": 1
+      },
+      "US Employment Situation (payrolls)": {
+        "ratio": 2.738119790482758,
+        "lo": 2.115162472672002,
+        "hi": 3.3720536582655893,
+        "minutes_above_1_5x": 4
+      },
+      "US CPI": {
+        "ratio": 2.2604456980986694,
+        "lo": 1.9289188626220912,
+        "hi": 2.597834974401761,
+        "minutes_above_1_5x": 4
+      },
+      "FOMC statement": {
+        "ratio": 2.1518536876424563,
+        "lo": 1.8488329788612308,
+        "hi": 2.453623241056608,
+        "minutes_above_1_5x": 2
+      }
+    },
+    "EURUSD": {
+      "RBA cash rate decision": {
+        "ratio": 0.7258231603060341,
+        "lo": 0.5527498334645672,
+        "hi": 0.8988964871475011,
+        "minutes_above_1_5x": 0
+      },
+      "ABS CPI": {
+        "ratio": 0.9354473386326747,
+        "lo": 0.6894551348730763,
+        "hi": 1.1694055696716905,
+        "minutes_above_1_5x": 0
+      },
+      "ABS Labour Force": {
+        "ratio": 1.0005307167595656,
+        "lo": 0.7985887751520644,
+        "hi": 1.2252055212899486,
+        "minutes_above_1_5x": 0
+      },
+      "US Employment Situation (payrolls)": {
+        "ratio": 2.95723784051809,
+        "lo": 2.2913542583091138,
+        "hi": 3.6379283235857214,
+        "minutes_above_1_5x": 5
+      },
+      "US CPI": {
+        "ratio": 2.0367787568421565,
+        "lo": 1.6529729524120038,
+        "hi": 2.4612819162914468,
+        "minutes_above_1_5x": 1
+      },
+      "FOMC statement": {
+        "ratio": 1.9752878312507818,
+        "lo": 1.4606148804204042,
+        "hi": 2.489960782081159,
+        "minutes_above_1_5x": 0
+      }
+    }
+  },
+  "planted_recovery": [
+    {
+      "event": "RBA cash rate decision",
+      "planted_peak_multiplier": 3.0,
+      "recovered_ratio_at_release": 2.97404778271413,
+      "ci": [
+        2.552857823202237,
+        3.35190641522815
+      ]
+    },
+    {
+      "event": "ABS CPI",
+      "planted_peak_multiplier": 1.8,
+      "recovered_ratio_at_release": 1.9366154427936164,
+      "ci": [
+        1.7410850956339659,
+        2.1505566509094654
+      ]
+    },
+    {
+      "event": "ABS Labour Force",
+      "planted_peak_multiplier": 1.8,
+      "recovered_ratio_at_release": 1.8166195986813698,
+      "ci": [
+        1.6655068634745702,
+        1.9721269339963268
+      ]
+    },
+    {
+      "event": "US Employment Situation (payrolls)",
+      "planted_peak_multiplier": 2.5,
+      "recovered_ratio_at_release": 2.597087316629769,
+      "ci": [
+        2.240372624046498,
+        3.0166435848060047
+      ]
+    },
+    {
+      "event": "US CPI",
+      "planted_peak_multiplier": 2.0,
+      "recovered_ratio_at_release": 2.0763768569537224,
+      "ci": [
+        1.8539231264150975,
+        2.328099442214728
+      ]
+    },
+    {
+      "event": "FOMC statement",
+      "planted_peak_multiplier": 2.0,
+      "recovered_ratio_at_release": 2.1303089400078736,
+      "ci": [
+        1.8751833329237317,
+        2.3802724018461667
+      ]
+    }
+  ],
+  "forecast": {
+    "other": {
+      "base_pinball": 0.03599195631992645,
+      "xgb_pinball": 0.01369400239105475,
+      "base_coverage80": 0.7855851261127595,
+      "xgb_coverage80": 0.814192321958457,
+      "base_brier": 0.0463398421157031,
+      "logit_brier": 0.03557195874217499,
+      "xgb_brier": 0.02600309280841206,
+      "n": 43136
+    },
+    "near_event": {
+      "base_pinball": 0.037112014298981554,
+      "xgb_pinball": 0.01600872673345059,
+      "base_coverage80": 0.7644230769230769,
+      "xgb_coverage80": 0.7572115384615383,
+      "base_brier": 0.23233935830509955,
+      "logit_brier": 0.16228354049762458,
+      "xgb_brier": 0.08830828767777668,
+      "n": 416
+    },
+    "blowout_rate": 0.05450955180014695,
+    "months_tested": 21
+  },
+  "regimes": {
+    "ari_year1_vs_year2_labels": 0.14614823659014717,
+    "loglik_year2_under_year1_model": -1.1394941094552289,
+    "loglik_year2_under_own_model": -1.1490377457977778,
+    "regime_share_year2_by_year1_model": [
+      0.42983716475095785,
+      0.5212324393358876,
+      0.04893039591315453
+    ],
+    "regime_share_year2_by_own_model": [
+      0.9217752234993615,
+      0.04893039591315453,
+      0.029294380587484035
+    ]
+  },
+  "advisor_demo": {
+    "query": "AUDUSD, $5M, 2 hours, from Mon 2 Nov 2026",
+    "cheapest": [
+      {
+        "window_start_sydney": "2026-11-03 00:00:00+11:00",
+        "window_end_sydney": "2026-11-03 02:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.1824922320796168",
+        "p05_bps": "0.16474626036839488",
+        "p95_bps": "0.20053633898375994",
+        "expected_cost_usd": "91.2461160398084",
+        "events_nearby": "",
+        "avoid": "False"
+      },
+      {
+        "window_start_sydney": "2026-11-10 00:00:00+11:00",
+        "window_end_sydney": "2026-11-10 02:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.18262940159993207",
+        "p05_bps": "0.1656139704482871",
+        "p95_bps": "0.20094258416409838",
+        "expected_cost_usd": "91.31470079996603",
+        "events_nearby": "",
+        "avoid": "False"
+      },
+      {
+        "window_start_sydney": "2026-11-12 00:00:00+11:00",
+        "window_end_sydney": "2026-11-12 02:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.183659913637015",
+        "p05_bps": "0.16745403889969823",
+        "p95_bps": "0.20078740825815944",
+        "expected_cost_usd": "91.82995681850751",
+        "events_nearby": "",
+        "avoid": "False"
+      },
+      {
+        "window_start_sydney": "2026-11-05 00:00:00+11:00",
+        "window_end_sydney": "2026-11-05 02:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.18395746963320087",
+        "p05_bps": "0.1672685924585156",
+        "p95_bps": "0.2010145339005434",
+        "expected_cost_usd": "91.97873481660042",
+        "events_nearby": "",
+        "avoid": "False"
+      },
+      {
+        "window_start_sydney": "2026-11-04 00:00:00+11:00",
+        "window_end_sydney": "2026-11-04 02:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.18427976162773568",
+        "p05_bps": "0.16893545459799006",
+        "p95_bps": "0.2004590883735223",
+        "expected_cost_usd": "92.13988081386785",
+        "events_nearby": "",
+        "avoid": "False"
+      }
+    ],
+    "dearest": [
+      {
+        "window_start_sydney": "2026-11-06 07:00:00+11:00",
+        "window_end_sydney": "2026-11-06 09:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.4454969072635196",
+        "p05_bps": "0.37646505026332905",
+        "p95_bps": "0.5313424979620222",
+        "expected_cost_usd": "222.74845363175982",
+        "events_nearby": "",
+        "avoid": "False"
+      },
+      {
+        "window_start_sydney": "2026-11-16 07:00:00+11:00",
+        "window_end_sydney": "2026-11-16 09:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.4640710051370166",
+        "p05_bps": "0.3859971897445664",
+        "p95_bps": "0.5574884879477273",
+        "expected_cost_usd": "232.03550256850832",
+        "events_nearby": "",
+        "avoid": "False"
+      },
+      {
+        "window_start_sydney": "2026-11-09 07:00:00+11:00",
+        "window_end_sydney": "2026-11-09 09:00:00+11:00",
+        "slices": "24",
+        "slice_notional": "208333.33333333334",
+        "expected_bps": "0.4655531685518914",
+        "p05_bps": "0.3876689253151568",
+        "p95_bps": "0.5532710397587607",
+        "expected_cost_usd": "232.7765842759457",
+        "events_nearby": "",
+        "avoid": "False"
+      }
+    ],
+    "avoid": [
+      {
+        "window_start_sydney": "2026-11-11 00:00:00+11:00",
+        "events_nearby": "US CPI (Wed 11 Nov 00:30)"
+      },
+      {
+        "window_start_sydney": "2026-11-07 00:00:00+11:00",
+        "events_nearby": "US Employment Situation (payrolls) (Sat 07 Nov 00:30)"
+      },
+      {
+        "window_start_sydney": "2026-11-03 15:00:00+11:00",
+        "events_nearby": "RBA cash rate decision (Tue 03 Nov 14:30)"
+      }
+    ]
+  }
+}
