@@ -2,7 +2,7 @@
 
 **When is it cheapest and most expensive to trade AUDUSD and AUDJPY, how much do scheduled releases change that, and can you forecast it?**
 
-![CI](https://github.com/OWNER/aud-cost-atlas/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/athish-shubhan/aud-cost-atlas/actions/workflows/ci.yml/badge.svg)
 
 > **What this measures.** FX is over the counter: there are no trade prints, and quoted volumes are indicative. This study measures **quote-based cost at the top of one venue's book** (Dukascopy), which is what a small to mid-sized order pays. It **cannot estimate market impact for large orders**, and nothing below should be read as the cost of a $50M ticket.
 
@@ -34,7 +34,7 @@ It ranks two-hour windows over the next two weeks by the expected half-spread co
 
 ## Method
 
-Quotes are cleaned (non-positive, crossed and outlier quotes dropped; anything outside the Sunday 17:00 to Friday 17:00 New York trading week removed; gaps flagged), and every minute gets its quoted spread from the bar's opening and closing bid and ask. **Sessions** are defined by local clock time in Sydney, Tokyo, London and New York, never by fixed UTC hours, because the three daylight-saving regimes move the overlaps through the year; the rollover is its own bucket. The **event study** divides each release's spread path by the mean path at the same clock minutes on non-release days with the same weekday (within eight weeks), so the time-of-day pattern cancels; bands resample events, and p-values are Holm-adjusted across pairs and event types. **Forecasts** run every 15 minutes, walk-forward by calendar month, with features that use only the past and the published release schedule. Bootstrap, splits and multiple-testing control come from [Skeptic](https://github.com/OWNER/skeptic).
+Quotes are cleaned (non-positive, crossed and outlier quotes dropped; anything outside the Sunday 17:00 to Friday 17:00 New York trading week removed; gaps flagged), and every minute gets its quoted spread from the bar's opening and closing bid and ask. **Sessions** are defined by local clock time in Sydney, Tokyo, London and New York, never by fixed UTC hours, because the three daylight-saving regimes move the overlaps through the year; the rollover is its own bucket. The **event study** divides each release's spread path by the mean path at the same clock minutes on non-release days with the same weekday (within eight weeks), so the time-of-day pattern cancels; bands resample events, and p-values are Holm-adjusted across pairs and event types. **Forecasts** run every 15 minutes, walk-forward by calendar month, with features that use only the past and the published release schedule. Bootstrap, splits and multiple-testing control come from [Skeptic](https://github.com/athish-shubhan/skeptic).
 
 ## Pipeline validation on planted effects
 
