@@ -85,7 +85,7 @@ def ticks_from_minutes(m: pd.DataFrame, seed: int = 0, bad_tick_rate: float = 2e
     rng = np.random.default_rng(seed + 1)
     n = rng.poisson(m["rate"].to_numpy())
     rep = np.repeat(np.arange(len(m)), n)
-    t0 = m.index.tz_convert(None).to_numpy().astype("datetime64[ns]")[rep]
+    t0 = pd.DatetimeIndex(m.index).tz_convert(None).to_numpy().astype("datetime64[ns]")[rep]
     off = rng.random(rep.size) * 60e9
     ts = t0 + off.astype("timedelta64[ns]")
     order = np.argsort(ts, kind="stable")

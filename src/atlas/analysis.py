@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import cast
 from zoneinfo import ZoneInfo
 
 import numpy as np
@@ -21,7 +22,7 @@ def heatmap(bars: pd.DataFrame, tz: str = "Australia/Sydney", n_boot: int = 300,
     New York and is included. Returns one row per (weekday, hour) with mean, lower, upper
     and the number of days.
     """
-    loc = bars.index.tz_convert(ZoneInfo(tz))
+    loc = pd.DatetimeIndex(bars.index).tz_convert(ZoneInfo(tz))
     df = pd.DataFrame({"spread": bars["spread_bps"].to_numpy(), "dow": loc.dayofweek,
                        "hour": loc.hour, "day": loc.normalize()})
     daily = df.groupby(["dow", "hour", "day"])["spread"].mean().reset_index()
@@ -31,7 +32,7 @@ def heatmap(bars: pd.DataFrame, tz: str = "Australia/Sydney", n_boot: int = 300,
         v = g["spread"].to_numpy()
         boots = rng.choice(v, size=(n_boot, v.size), replace=True).mean(axis=1)
         lo, hi = np.quantile(boots, [0.025, 0.975])
-        rows.append({"weekday": WEEKDAYS[d], "dow": d, "hour": h, "mean_bps": v.mean(), "lo": lo, "hi": hi,
+        rows.append({"weekday": WEEKDAYS[cast(int, d)], "dow": d, "hour": h, "mean_bps": v.mean(), "lo": lo, "hi": hi,
                      "days": v.size})
     return pd.DataFrame(rows)
 

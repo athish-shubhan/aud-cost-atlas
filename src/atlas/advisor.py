@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+from typing import cast
 from zoneinfo import ZoneInfo
 
 import numpy as np
@@ -24,9 +25,9 @@ TZ = "Australia/Sydney"
 
 
 def slot_samples(bars: pd.DataFrame, tz: str = TZ) -> dict[tuple[int, int], np.ndarray]:
-    loc = bars.index.tz_convert(ZoneInfo(tz))
+    loc = pd.DatetimeIndex(bars.index).tz_convert(ZoneInfo(tz))
     df = pd.DataFrame({"s": bars["spread_bps"].to_numpy(), "dow": loc.dayofweek, "hour": loc.hour})
-    return {k: g["s"].to_numpy() for k, g in df.groupby(["dow", "hour"])}
+    return {cast(tuple[int, int], k): g["s"].to_numpy() for k, g in df.groupby(["dow", "hour"])}
 
 
 def advise(bars: pd.DataFrame, cal: pd.DataFrame, start: pd.Timestamp, notional: float, urgency_h: float,

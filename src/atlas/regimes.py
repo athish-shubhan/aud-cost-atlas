@@ -30,7 +30,7 @@ def windows(bars: pd.DataFrame) -> pd.DataFrame:
         "log_rv": np.log(np.sqrt((bars["rv_bps"] ** 2).resample("15min").sum()) + 1e-3),
         "jump_rate": g["jump"].mean(),
     }).dropna()
-    return w[np.isfinite(w).all(axis=1)]
+    return pd.DataFrame(w[np.isfinite(w).all(axis=1)])
 
 
 @dataclass

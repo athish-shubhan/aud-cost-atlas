@@ -145,8 +145,9 @@ def minute_bars(q: pd.DataFrame) -> pd.DataFrame:
 def typical_spread(bars: pd.DataFrame, days: int = 20) -> pd.Series:
     """Trailing median spread for the same 15-minute slot of the day, over the last ``days``
     days, using only earlier days. Used to define a spread blowout (> 2x typical)."""
-    slot = (bars.index.hour * 4 + bars.index.minute // 15).to_numpy()
-    day = bars.index.normalize()
+    bix = pd.DatetimeIndex(bars.index)
+    slot = (bix.hour * 4 + bix.minute // 15).to_numpy()
+    day = bix.normalize()
     daily = bars.groupby([day, slot])["spread_bps"].median().unstack()
     trailing = daily.rolling(days, min_periods=5).median().shift(1)
     vals = trailing.stack()

@@ -45,7 +45,7 @@ def dataset(bars: pd.DataFrame, cal: pd.DataFrame) -> pd.DataFrame:
     # targets (forward-looking, labels only)
     feats["y_next_hour"] = _forward_mean(s, full, 60)
     mx15 = _forward_max(s, full, 15)
-    feats["y_blowout_15"] = (mx15 > 2 * feats["typical"]).astype(float).where(feats["typical"].notna())
+    feats["y_blowout_15"] = pd.Series(mx15 > 2 * feats["typical"], index=feats.index).astype(float).where(feats["typical"].notna())
     feats["slot"] = (full.hour * 4 + full.minute // 15)
     feats["month"] = full.tz_convert("UTC").strftime("%Y-%m")
     return feats.dropna()
