@@ -69,6 +69,13 @@ The October 2025 US payrolls and CPI releases were never published, because of t
 
 ## Reproduce
 
+The package depends on [Skeptic](https://github.com/athish-shubhan/skeptic), which is not on PyPI. Clone it next to this repository, then install both:
+
+```bash
+git clone https://github.com/athish-shubhan/skeptic ../skeptic
+make install
+```
+
 | Command | What it does |
 |---|---|
 | `make data` | fetch the Dukascopy one-minute bid/ask files used here (about 100 MB, from a public GitHub mirror) |

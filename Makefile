@@ -1,6 +1,6 @@
 PY ?= python
 
-.PHONY: install test lint data reproduce full validate real-histdata real-bi5 advisor note
+.PHONY: install test lint data reproduce full validate real-histdata real-bi5 advisor
 install:
 	$(PY) -m pip install -e ../skeptic -e ".[dev]"
 test:
@@ -22,5 +22,3 @@ real-bi5:             ## alternative source: Dukascopy hourly tick files fetched
 	$(PY) studies/run_atlas.py --source bi5 --raw data/raw
 advisor:
 	$(PY) -m atlas.advisor --pair AUDUSD --notional 5e6 --urgency 2 --start 2026-11-02
-note:
-	../tools/note2pdf.sh docs/note.md docs/note.pdf
